@@ -17,7 +17,7 @@ torch.manual_seed(1)
 
 total = pd.read_csv('annotation.csv')
 start = dict(zip(total['gene'], total['start']))
-base_path = '../drugs/'
+base_path = 'drugs/'
 
 def make_feature_list(file, samples):
     """
@@ -36,7 +36,7 @@ def make_feature_list(file, samples):
         with open(file + samples[i] + '_result.tsv', 'r') as f:
             lines = f.readlines()
         if len(lines) > 1:
-            print('length error:', len(lines), 'in', samples[i])
+            print('length error:', len(lines), 'in', samples[i], 'line', i)
         features[i] = lines[0].split()
     #names = [line.split()[0] for line in lines if line.split()[0] in samples]
     return features
