@@ -6,7 +6,7 @@ train_lstm.py: обучение модели LSTM.
 
 w2v_lstm_functions.py: вспомогательные функции.
 
-
+training.yml: окружение.
 
 
 ## Данные
