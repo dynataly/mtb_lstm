@@ -5,10 +5,10 @@ import torch
 import torch.nn as nn
 
 drug = 'Pyrazinamide'
-fld = '5'
+fld = '2'
 print(drug, fld)
 
-epochs = 50
+epochs = 2
 m_name = '2'
 
 lr = 0.001
