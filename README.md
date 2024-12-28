@@ -1,4 +1,4 @@
-# mtb_lstm
+
 
 train_w2v.py: обучение эмбеддинга Word2Vec.
 
