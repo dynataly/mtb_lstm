@@ -78,11 +78,11 @@ def prep(drug, fld):
     #train_samples = samples[1:ind]
     test_samples = samples[ind+1:]
     
-    #test = make_feature_list('../features/feature_lists/', test_samples)
+    #test = make_feature_list('../feature_lists/', test_samples)
     
     # set for w2v: all except test
     train_w2v_IDs = list(all_samples - set(test_samples))
-    train_w2v = make_feature_list('../features/feature_lists/', train_w2v_IDs)
+    train_w2v = make_feature_list('../feature_lists/', train_w2v_IDs)
     
     ## add agr features
     with open(f'{base_path}{drug}/agr_feature_list{fld}.txt') as f:
@@ -150,8 +150,8 @@ def prepare_data(drug, fld, return_names=False):
     test_samples = samples[ind+1:]
     
     # list of lists of features for each sample
-    test = make_feature_list('../features/feature_lists/', test_samples)
-    train = make_feature_list('../features/feature_lists/', train_samples)
+    test = make_feature_list('../feature_lists/', test_samples)
+    train = make_feature_list('../feature_lists/', train_samples)
 
     ## add agr features
     with open(f'{base_path}{drug}/agr_feature_list{fld}.txt') as f:
