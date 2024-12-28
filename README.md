@@ -1,6 +1,15 @@
 # mtb_lstm
 
+train_w2v.py: обучение эмбеддинга Word2Vec.
 
+train_lstm.py: обучение модели LSTM.
+
+w2v_lstm_functions.py: вспомогательные функции.
+
+
+
+
+## Данные
 Данные по туберкулёзному проекту доступны на Яндекс-диске:
 
 Генотипы: https://disk.yandex.ru/d/Fo5ya06yKmhlPA
