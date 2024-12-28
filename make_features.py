@@ -21,11 +21,11 @@ for f in os.listdir('translated_no_triplets_and_clips'):
 	with open('translated_no_triplets_and_clips/' + f) as info:
 		lines = info.readlines()
 	# output
-	with open('mtb_lstm/feature_lists/' + f, 'w') as out:
+	with open('feature_lists/' + f, 'w') as out:
 		for l in lines:
 			ft = '#'.join(l.split())
 			# if the feature is too rare or too frequent: skip
 			if d[ft] < thr or d[ft] > max_fr - thr:
 				continue
-			print(ft, endl=' ', file=out)
+			print(ft, end=' ', file=out)
 	#break
